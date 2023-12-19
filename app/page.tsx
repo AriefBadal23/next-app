@@ -1,7 +1,13 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
+import ProductCard from "./components/ProductCard";
 
 export default function Home() {
   return (
-    <h1>Hell World</h1>
-  )
+    <main>
+      <h1>Hell World</h1>
+      <ProductCard></ProductCard>
+      <Link href="/users">Users</Link>
+    </main>
+  );
 }
